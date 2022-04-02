@@ -1,20 +1,25 @@
 #include <iostream>
+#include <math.h>
 using namespace std;
 
 int main() {
-long long int i;
-long long int liczba;
-long long int reszta;
+int i;
+int liczba;
+int reszta;
+int granica;
 
 cin >> liczba;
+//cout << liczba;
 
-for (i=2; i<liczba/2; ++i) {
+granica=pow(liczba,0.5)+1;
+
+for (i=2; i<granica; ++i) {
 	reszta = liczba %i; 
 if (reszta ==0) { 
-	cout << "NIE";
+	cout << "NIE ";
+//	cout << i;
 	return 0;
-	}else{ 
-}
+	}
 }
 if (liczba ==1) {
 	cout << "NIE";
